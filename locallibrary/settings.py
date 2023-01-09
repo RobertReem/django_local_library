@@ -27,8 +27,12 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
-
+##For example, for a site URL at 'web-production-3640.up.railway.app'
+##(replace the string below with your own site URL)
+ALLOWED_HOSTS = ['web-production-30bc.up.railway.app']
+# During development, you can instead set just the base URL
+# (you might decide to change the site a few times).
+# ALLOWED_HOSTS = ['.railway.com','127.0.0.1']
 
 # Application definition
 
